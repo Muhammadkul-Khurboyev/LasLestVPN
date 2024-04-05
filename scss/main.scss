@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$dark:    #4F5665;
+$primary: #0B132A;
+$danger: #F53855;
+$h1-font-size: 1rem * 50/16;
+$h6-font-size: 1rem * 25/16;
+$h2-font-size: 1rem * 35/16;
+$h5-font-size: 1rem * 14/16;
+$h4-font-size: 1rem * 18/16;
+$spacer: 1rem;
+$spacers: (
+0: 0,
+1: $spacer * .25,
+2: $spacer * 2.5,
+3: $spacer * 8.25,
+4: $spacer * 1.875,
+5: $spacer * 3,
+6: $spacer * 13/16,
+7: $spacer * 45/16,
+8: $spacer * 17/32,
+9: $spacer * 77/32,
+10: $spacer * 20/16,
+11: $spacer * 30/16,
+12: $spacer * 76/16,
+13: $spacer * 63/16,
+14: $spacer * 70/16,
+15: $spacer * 58.5/16,
+16: $spacer * 181/16,
+17: $spacer * 100/16,
+);
+.link {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.lists {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 10px;
+}
+.our-list {
+  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
+}
+.item {
+  height: 760px;
+  border-radius: 10px;
+  border: 2px solid #DDD;
+  background: #FFF;
+}
+.item:hover {
+  border-color: #F53855;
+}
+.item:hover a {
+  background-color: #F53855;
+  color: #FFF !important;
+}
+.world {
+  margin: 0 auto;
+}
+.items {
+  width: 400px;
+  height: 230px;
+  border-radius: 10px;
+  border: 2px solid #DDD;
+  background: #FFF;
+}
+.items:hover {
+  border-color: #F53855;
+}
+.btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border: 1px solid #F53855 !important;
+  border-radius: 50% !important;
+  background-color: transparent;
+  background-image: url("../images/left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.style-btn {
+  background-image: url("../images/right.svg");
+  background-color: #F53855 !important;
+}
+.info {
+  width: 1340px;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 10;
+  background-color: #FFF;
+}
+.site-footer {
+  background-color: #F8F8F8;
+}
+.footer-logo-wrapper {
+  width: 340px;
+}
+
+@import "./bootstrap.scss";
